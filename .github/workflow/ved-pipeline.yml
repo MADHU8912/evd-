@@ -9,25 +9,20 @@ on:
 jobs:
 
   build:
+    name: Build
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - run: echo "Build Successful"
 
-      - name: Build
-        run: echo "Build Successful"
-
-  report-of-build:
+  report:
+    name: Report of Build
     runs-on: ubuntu-latest
-
     steps:
-      - name: Report Build Status
-        run: echo "Build Report Generated"
+      - run: echo "Build Report Generated"
 
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Deploy Step
-        run: echo "Deploy Completed"
+      - run: echo "Deploy Completed"
