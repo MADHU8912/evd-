@@ -15,14 +15,14 @@ jobs:
       - uses: actions/checkout@v4
       - run: echo "Build Successful"
 
-  report:
-    name: Report of Build
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Build Report Generated"
-
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Deploy Completed"
+                                      report:
+                                      name: Report of Build
+                                      runs-on: ubuntu-latest
+                                      steps:
+                                      - run: echo "Build Report Generated"
+                                      
+                                                                         deploy:
+                                                                         name: Deploy
+                                                                         runs-on: ubuntu-latest
+                                                                         steps:
+                                                                         - run: echo "Deploy Completed"
