@@ -19,7 +19,6 @@ jobs:
         run: echo "Build Successful"
 
   report-of-build:
-    needs: build
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +26,6 @@ jobs:
         run: echo "Build Report Generated"
 
   deploy:
-    needs: report-of-build
     runs-on: ubuntu-latest
 
     steps:
